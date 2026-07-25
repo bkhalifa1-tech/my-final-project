@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">جنيني</string>
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="welcome_back">نحن معكِ فى كل خطوة  ، من البداية و حتى  اللقاء الأول\n بطفلك المنتظر  \n</string>
+    <string name="email_label">البريد الإلكتروني</string>
+    <string name="email_hint">أدخل البريد الإلكتروني</string>
+    <string name="password_label">كلمة المرور</string>
+    <string name="password_hint">أدخل كلمة المرور</string>
+    <string name="no_account">ليس لديك حساب؟</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="create_account_title">إنشاء حساب</string>
+    <string name="start_journey">ابدأ رحلتك معنا</string>
+    <string name="full_name_label">الاسم الكامل</string>
+    <string name="confirm_password_label">تأكيد كلمة المرور</string>
+    <string name="phone_number_label">رقم الهاتف</string>
+    <string name="have_account">لديك حساب؟</string>
+    <string name="login_now">تسجيل الدخول</string>
+    <string name="my_account">حسابي</string>
+    <string name="current_stage">المرحلة الحالية</string>
+    <string name="birth_date">موعد الولادة</string>
+    <string name="personal_info">المعلومات الشخصية</string>
+    <string name="edit_account">تعديل الحساب</string>
+
+    <string name="username_label">اسم المستخدم</string>
+    <string name="pregnancy_week_label">أسبوع الحمل</string>
+    <string name="expected_birth_date_label">موعد الولادة المتوقع</string>
+    <string name="notifications_label">إشعارات التذكير</string>
+    <string name="notifications_desc">استلم تنبيهات أسبوعية عن تطور جنينك</string>
+    <string name="save_changes">حفظ التعديلات</string>
+    <string name="cancel">إلغاء</string>
+    <string name="change_profile_pic">تغيير الصورة الشخصية</string>
+    <string name="email_value">banan@email.com</string>
+    <string name="phone_value">0590000000</string>
+    <string name="birth_date_label">تاريخ الميلاد</string>
+    <string name="edit_name_value">نورة الأحمد</string>
+    <string name="edit_username_value">noura_92</string>
+    <string name="edit_email_value">noura@example.com</string>
+    <string name="edit_phone_value">05XXXXXXXX</string>
+    <string name="edit_week_value">12</string>
+    <string name="date_placeholder">يوم / شهر / سنة</string>
+    <string name="how_to_use">كيف ستستخدم التطبيق؟</string>
+    <string name="choose_role_desc">اختاري دورك أو اختر دورك للوصول إلى التجربة المناسبة</string>
+    <string name="i_am_mother">أنا الأم</string>
+    <string name="mother_desc">متابعة الحمل، تسجيل الأعراض والمواعيد، ومشاركة الرحلة مع الأب</string>
+    <string name="i_am_father">أنا الأب</string>
+    <string name="father_desc">متابعة رحلة الحمل ودعم الأم بعد ربط الحسابين</string>
+    <string name="change_later_note">يمكن تغيير بعض الإعدادات لاحقاً من الحساب</string>
+    <string name="continue_btn">متابعة</string>
+
+    <!-- Pregnancy Calculator -->
+    <string name="due_date_calculator">حاسبة موعد الولادة</string>
+    <string name="select_last_period_date">حددي تاريخ آخر دورة شهرية</string>
+    <string name="due_date_calculator_desc">سنقوم بحساب موعد ولادتك المتوقع وتتبع رحلة طفلك</string>
+    <string name="calculate_due_date">أحسبي موعد الولادة</string>
+    <string name="expected_due_date_is">موعد ولادتك المتوقع هو :</string>
+    <string name="update_settings">تحديث الإعدادات</string>
+    <string name="set_as_default">ضبط كافتراضي</string>
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_support">الدعم</string>
+    <string name="nav_appointments">المواعيد</string>
+    <string name="nav_tools">الأدوات</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="time_label">Time</string>
+    <string name="time_value">9:41 AM</string>
+    <string name="sample_due_date">27 يناير 2026</string>
+
+    <!-- Home Screen -->
+    <string name="welcome_user">مرحباً، بنان</string>
+    <string name="wish_happy_journey">نتمنى لكِ يوماً سعيداً وجميلاً</string>
+    <string name="week_24">الأسبوع 24</string>
+    <string name="sixth_month">الشهر السادس</string>
+    <string name="remaining_weeks">متبقي 16 أسبوعاً على موعد الولادة</string>
+    <string name="baby_development_title">تطور طفلك هذا الأسبوع</string>
+    <string name="baby_development_desc">يبدأ طفلك الآن في تخزين الدهون تحت الجلد، مما يجعل بشرته أقل شفافية.</string>
+    <string name="baby_size_title">حجم طفلك الحالي</string>
+    <string name="baby_size_value">بحجم حبة المانجو</string>
+    <string name="height_label">الطول</string>
+    <string name="weight_label">الوزن</string>
+    <string name="height_value">30 سم</string>
+    <string name="weight_value">600 جم</string>
+    <string name="tasks_this_week">نصائح هذا الأسبوع</string>
+    <string name="view_all">عرض الكل</string>
+    <string name="drink_water">اشربي الماء</string>
+    <string name="take_rest">خذي وقتاً للراحة</string>
+
+    <!-- Weekly Tips Screen -->
+    <string name="weekly_tips_title">نصائح الأسبوع</string>
+    <string name="task_vitamins">تناول الفيتامينات اليومية</string>
+    <string name="task_vitamins_desc">الحرص على تناول حمض الفوليك والحديد لتعزيز نمو طفلك.</string>
+    <string name="task_walking">ممارسة رياضة المشي</string>
+    <string name="task_walking_desc">المشي لمدة 15 دقيقة يومياً يساعد في تحسين الدورة الدموية.</string>
+    <string name="task_water">شرب لترين من الماء</string>
+    <string name="task_water_desc">الترطيب مهم جداً لتجنب التورم والشعور بالإجهاد.</string>
+    <string name="task_hospital_bag">تحضير حقيبة المستشفى</string>
+    <string name="task_hospital_bag_desc">ابدئي بتجهيز الضروريات لكِ وللمولود لتكوني مستعدة دائماً.</string>
+    <string name="task_ultrasound">حجز موعد السونار القادم</string>
+    <string name="task_ultrasound_desc">تأكدي من التواصل مع عيادتك لتأكيد موعد الفحص الدوري.</string>
+
+    <!-- Tools Screen -->
+    <string name="my_basic_tools">أدواتي الأساسية</string>
+    <string name="tools_desc">كل ما تحتاجينه في رحلة حملك في مكان واحد</string>
+    <string name="weekly_tips_tool">نصائح أسبوعية</string>
+    <string name="emergency_numbers">أرقام الطوارئ</string>
+
+    <!-- Add Appointment Screen -->
+    <string name="add_appointment_title">إضافة موعد</string>
+    <string name="add_appointment_desc">أضيفي تفاصيل الموعد الجديد</string>
+    <string name="appointment_subject">عنوان الموعد</string>
+    <string name="appointment_subject_hint">مثلاً: فحص الشهر الخامس</string>
+    <string name="doctor_name">اسم الطبيبة</string>
+    <string name="doctor_name_hint">مثلاً: د. سارة</string>
+    <string name="date_label">التاريخ</string>
+    <string name="time_picker_label">الوقت</string>
+    <string name="location_label">المكان</string>
+    <string name="location_hint"> مثلاَ : عيادة الأمل، الطابق الثالث</string>
+    <string name="phon_hint"> مثلاً : 0567447041 </string>
+    <string name="phone_label">رقم الهاتف</string>
+    <string name="notes_label">ملاحظات</string>
+    <string name="save_appointment">حفظ الموعد</string>
+
+    <!-- Appointments List Screen -->
+    <string name="appointments_reminders_title">المواعيد </string>
+    <string name="today_date">اليوم، 24 مايو</string>
+    <string name="tab_all">الكل</string>
+    <string name="tab_medical">مواعيد طبية</string>
+    <string name="tab_medication">أدوية</string>
+    <string name="tab_reminders">تذكيرات</string>
+    <string name="medication_folic">حمض الفوليك</string>
+    <string name="medication_time">8:00 صباحاً • يومياً</string>
+    <string name="appointment_ultrasound">فحص سونار</string>
+    <string name="appointment_ultrasound_time">10:30 صباحاً • مستشفى الولادة</string>
+    <string name="status_upcoming">قادم</string>
+    <string name="tomorrow">غداً</string>
+    <string name="medication_vitamins">فيتامينات</string>
+
+    <!-- Appointment Details Screen -->
+    <string name="appointment_details">تفاصيل الموعد</string>
+    <string name="edit_appointment_btn">تعديل الموعد</string>
+    <string name="delete_appointment_btn">حذف الموعد</string>
+    <string name="open_map">فتح الخريطة</string>
+    <string name="call_btn">اتصال</string>
+    <string name="week_tips">نصائح الاسبوع</string>
+
+</resources>

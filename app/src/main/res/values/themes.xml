@@ -1,0 +1,142 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.FainlProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_Button</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/shape_color</item>
+        <item name="colorOnPrimaryContainer">@color/title_text</item>
+
+        <item name="colorSecondary">@color/hit600_text</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/hit200_text</item>
+        <item name="colorOnSecondaryContainer">@color/title_text</item>
+
+        <item name="colorTertiary">@color/info_color</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="colorTertiaryContainer">@color/shape_color</item>
+        <item name="colorOnTertiaryContainer">@color/title_text</item>
+
+        <item name="colorError">@color/error_color</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorErrorContainer">@color/shape_color</item>
+        <item name="colorOnErrorContainer">@color/title_text</item>
+
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/title_text</item>
+        <item name="colorSurfaceVariant">@color/hit200_text</item>
+        <item name="colorOnSurfaceVariant">@color/hit500_text</item>
+        <item name="colorOutline">@color/hit500_text</item>
+        <item name="colorOutlineVariant">@color/hit200_text</item>
+
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.SereneFlora.DisplayLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.SereneFlora.HeadlineMedium</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.SereneFlora.TitleLarge</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.SereneFlora.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.SereneFlora.BodyMedium</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.SereneFlora.LabelMedium</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.SereneFlora.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.SereneFlora.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.SereneFlora.LargeComponent</item>
+    </style>
+
+    <style name="Theme.FainlProject" parent="Base.Theme.FainlProject" />
+
+    <style name="ShapeAppearance.SereneFlora.Circle" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="TextAppearance.SereneFlora.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="android:textSize">@dimen/size_text32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.SereneFlora.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">@dimen/size_text24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.SereneFlora.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">@dimen/size_text20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.SereneFlora.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">@dimen/size_text16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.SereneFlora.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.SereneFlora.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="ShapeAppearance.SereneFlora.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">@dimen/size_8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SereneFlora.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">@dimen/size_16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SereneFlora.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerSize">@dimen/size_24dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SereneFlora.Pill" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">@dimen/size_1000dp</item>
+    </style>
+
+    <style name="Widget.SereneFlora.Button" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/image_profile</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.SereneFlora.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">@dimen/size_24dp</item>
+        <item name="cardElevation">@dimen/size_8dp</item>
+    </style>
+
+    <style name="Widget.SereneFlora.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/size_24dp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/size_24dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/size_24dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/size_24dp</item>
+        <item name="boxStrokeColor">@color/hit200_text</item>
+        <item name="hintTextColor">@color/hit500_text</item>
+        <item name="android:textColorHint">@color/hit500_text</item>
+    </style>
+
+    <style name="Widget.SereneFlora.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edit_background</item>
+        <item name="android:paddingLeft">@dimen/size_16dp</item>
+        <item name="android:paddingRight">@dimen/size_16dp</item>
+        <item name="android:paddingTop">@dimen/size_16dp</item>
+        <item name="android:paddingBottom">@dimen/size_16dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.SereneFlora.BodyMedium</item>
+        <item name="android:textColorHint">@color/hit500_text</item>
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+
+    <style name="Widget.SereneFlora.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/primary_Button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.SereneFlora.Pill</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+</resources>

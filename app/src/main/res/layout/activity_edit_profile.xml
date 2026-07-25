@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:layoutDirection="rtl"
+    tools:context="com.example.myfinalproject.EditProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_32dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/size_32dp"
+            android:layout_height="@dimen/size_32dp"
+            android:layout_marginTop="@dimen/size_32dp"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:src="@drawable/rightarrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_account"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/size_text24sp"
+            app:layout_constraintBottom_toBottomOf="@id/btnBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btnBack" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ImaEditProfile"
+            android:layout_width="@dimen/size_112dp"
+            android:layout_height="@dimen/size_112dp"
+            android:layout_marginTop="@dimen/size_88dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.SereneFlora.Circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeaderTitle" />
+
+        <ImageView
+            android:id="@+id/ImProfile"
+            android:layout_width="@dimen/size_32dp"
+            android:layout_height="@dimen/size_32dp"
+            android:src="@drawable/camera"
+            android:padding="@dimen/size_8dp"
+            android:background="@drawable/button_selector"
+            app:layout_constraintBottom_toBottomOf="@id/ImaEditProfile"
+            app:layout_constraintStart_toStartOf="@id/ImaEditProfile" />
+
+
+        <TextView
+            android:id="@+id/tvFullNameLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/full_name_label"
+            android:textColor="@color/primary_Button"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="@dimen/size_32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ImaEditProfile" />
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_56dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_background"
+            android:paddingStart="@dimen/size_16dp"
+            android:textSize="@dimen/size_text16sp"
+            android:textColor="@color/title_text"
+            android:text="."
+            android:layout_marginTop="@dimen/size_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFullNameLabel" />
+
+
+
+        <TextView
+            android:id="@+id/tvEmailLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/etEmail"
+            android:text="@string/email_label"
+            android:textColor="@color/primary_Button"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="@dimen/size_32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etFullName" />
+
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_56dp"
+            android:background="@drawable/edit_background"
+            android:gravity="center_vertical|start"
+            android:paddingStart="@dimen/size_16dp"
+            android:paddingEnd="@dimen/size_16dp"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/size_text16sp"
+            android:layout_marginTop="@dimen/size_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEmailLabel" />
+
+        <TextView
+            android:id="@+id/tvPhoneLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number_label"
+            android:textColor="@color/primary_Button"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="@dimen/size_32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_56dp"
+            android:drawablePadding="@dimen/size_8dp"
+            android:drawableStart="@drawable/phone"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:hint="@string/phone_number_label"
+            android:inputType="phone"
+            android:background="@drawable/edit_background"
+            android:paddingStart="@dimen/size_16dp"
+            android:textSize="@dimen/size_text16sp"
+            android:textColor="@color/title_text"
+            android:textColorHint="@color/hit200_text"
+            android:gravity="end|center_vertical"
+            android:text="."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPhoneLabel" />
+
+
+        <TextView
+            android:id="@+id/tvPregnancyLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pregnancy_week_label"
+            android:textColor="@color/primary_Button"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="@dimen/size_32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPhone" />
+
+        <EditText
+            android:id="@+id/etPregnancyWeek"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_56dp"
+            android:inputType="number"
+            android:background="@drawable/edit_background"
+            android:paddingStart="@dimen/size_16dp"
+            android:paddingEnd="@dimen/size_16dp"
+            android:textSize="@dimen/size_text16sp"
+            android:textColor="@color/title_text"
+            android:hint="0"
+            android:layout_marginTop="@dimen/size_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPregnancyLabel" />
+
+        <TextView
+            android:id="@+id/tvBirthDateLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/expected_birth_date_label"
+            android:textColor="@color/primary_Button"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="@dimen/size_32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPregnancyWeek" />
+
+        <TextView
+            android:id="@+id/tvBirthDate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_56dp"
+            android:background="@drawable/edit_background"
+            android:paddingStart="@dimen/size_16dp"
+            android:paddingEnd="@dimen/size_16dp"
+            android:gravity="center_vertical|start"
+            android:textSize="@dimen/size_text16sp"
+            android:textColor="@color/title_text"
+            android:layout_marginTop="@dimen/size_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBirthDateLabel" />
+
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_56dp"
+            android:layout_marginTop="@dimen/size_56dp"
+            android:text="@string/save_changes"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:background="@drawable/button_selector"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBirthDate" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_56dp"
+            android:layout_marginTop="@dimen/size_24dp"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            app:backgroundTint="@color/white"
+            android:text="@string/cancel"
+            android:gravity="center|center_horizontal"
+            android:textColor="@color/primary_Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSave"
+             />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_56dp"
+            android:layout_marginTop="@dimen/size_24dp"
+            android:background="@drawable/role_card_unselected"
+            android:fontFamily="serif"
+            android:text="تسجيل الخروج"
+            android:textColor="@color/error_color"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnCancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

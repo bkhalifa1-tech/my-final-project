@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="rtl"
+    tools:context="com.example.myfinalproject.DueDateCalculatorActivity">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_64dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/size_20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/size_32dp"
+            android:layout_height="@dimen/size_32dp"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:src="@drawable/rightarrow" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/due_date_calculator"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/size_text24sp"
+            android:fontFamily="serif"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_150dp"
+            android:padding="@dimen/size_20dp">
+
+            <TextView
+                android:id="@+id/tvCalcHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_last_period_date"
+                android:textColor="@color/title_text"
+                android:textSize="@dimen/title_text24sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginTop="@dimen/size_32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCalcDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_4dp"
+                android:gravity="center"
+                android:text="@string/due_date_calculator_desc"
+                android:textColor="@color/hit500_text"
+                android:textSize="@dimen/size_text16sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCalcHeading" />
+
+            <Button
+                android:id="@+id/btnPickDate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_56dp"
+                android:layout_marginTop="@dimen/size_32dp"
+                android:background="@drawable/role_card_unselected"
+                android:fontFamily="serif"
+                android:text="اختيار تاريخ آخر دورة"
+                android:textColor="@color/shape_color"
+                android:textSize="@dimen/size_text16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCalcDesc" />
+
+            <TextView
+                android:id="@+id/tvSelectedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_16dp"
+                android:fontFamily="serif"
+                android:text="تاريخ آخر دورة: لم يتم الاختيار"
+                android:textColor="@color/hit600_text"
+                android:textSize="@dimen/size_text16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnPickDate" />
+
+            <Button
+                android:id="@+id/btnCalcAction"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_56dp"
+                android:text="@string/calculate_due_date"
+                android:layout_marginTop="@dimen/size_32dp"
+                android:background="@drawable/button_selector"
+                android:fontFamily="serif"
+                android:gravity="center|center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_text16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSelectedDate" />
+
+            <View
+                android:id="@+id/vResultBg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_150dp"
+                android:layout_marginTop="@dimen/size_32dp"
+                android:visibility="gone"
+                android:background="@drawable/viwe_background"
+                app:layout_constraintBottom_toBottomOf="@id/tvResultValue"
+                app:layout_constraintTop_toBottomOf="@id/btnCalcAction"
+                android:layout_marginBottom="-16dp" />
+
+            <TextView
+                android:id="@+id/tvResultLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expected_due_date_is"
+                android:layout_marginTop="@dimen/size_24dp"
+                android:fontFamily="serif"
+                android:gravity="center|center_horizontal"
+                android:textColor="@color/shape_color"
+                android:textSize="@dimen/size_text16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/vResultBg"
+                app:layout_constraintStart_toStartOf="@id/vResultBg"
+                app:layout_constraintTop_toTopOf="@id/vResultBg" />
+
+            <TextView
+                android:id="@+id/tvResultValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_8dp"
+                android:text=" "
+                android:textColor="@color/title_text"
+                android:textSize="@dimen/title_text32sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/vResultBg"
+                app:layout_constraintStart_toStartOf="@id/vResultBg"
+                app:layout_constraintTop_toBottomOf="@id/tvResultLabel" />
+
+            <Button
+                android:id="@+id/btnGoHome"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_56dp"
+                android:layout_marginTop="@dimen/size_16dp"
+                android:background="@drawable/button_selector"
+                android:fontFamily="serif"
+                android:text="الانتقال للرئيسية"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_text16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vResultBg" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

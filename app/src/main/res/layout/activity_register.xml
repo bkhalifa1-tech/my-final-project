@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="rtl"
+    android:fillViewport="true"
+    tools:context="com.example.myfinalproject.Register">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_32dp">
+
+
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="@dimen/size_112dp"
+                android:layout_height="@dimen/size_112dp"
+                android:layout_marginTop="@dimen/size_80dp"
+                android:src="@drawable/img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvRegisterTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_textToImage16dp"
+                android:text="@string/create_account_title"
+                android:textColor="@color/title_text"
+                android:textSize="@dimen/title_text32sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logoImage" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_journey"
+                android:textColor="@color/hit500_text"
+                android:textSize="@dimen/size_text16sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRegisterTitle" />
+
+
+
+
+            <EditText
+                android:id="@+id/edFullName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_56dp"
+                android:hint="@string/full_name_label"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_background"
+                android:paddingStart="@dimen/size_16dp"
+                android:textSize="@dimen/size_text16sp"
+                android:textColor="@color/hit600_text"
+                android:textColorHint="@color/hit200_text"
+                android:layout_marginTop="@dimen/size_32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_56dp"
+                android:background="@drawable/edit_background"
+                android:drawableEnd="@drawable/email"
+                android:paddingEnd="@dimen/size_24dp"
+                android:drawablePadding="@dimen/size_8dp"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:paddingStart="@dimen/size_16dp"
+                android:textSize="@dimen/size_text16sp"
+                android:textColor="@color/hit600_text"
+                android:textColorHint="@color/hit200_text"
+                android:layout_marginTop="@dimen/size_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edFullName" />
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_56dp"
+                android:background="@drawable/edit_background"
+                android:drawableStart="@drawable/padlock"
+                android:drawablePadding="@dimen/size_8dp"
+                android:hint="@string/password_label"
+                android:inputType="textPassword"
+                android:importantForAutofill="no"
+                android:paddingStart="@dimen/size_16dp"
+                android:textSize="@dimen/size_text16sp"
+                android:textColor="@color/hit600_text"
+                android:gravity="end|center_vertical"
+                android:textColorHint="@color/hit200_text"
+                android:layout_marginTop="@dimen/size_16dp"
+                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edEmail" />
+
+            <EditText
+                android:id="@+id/edConfirmPassword"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_56dp"
+                android:background="@drawable/edit_background"
+                android:paddingEnd="@dimen/size_24dp"
+                android:drawablePadding="@dimen/size_8dp"
+                android:hint="@string/confirm_password_label"
+                android:inputType="textPassword"
+                android:importantForAutofill="no"
+                android:paddingStart="@dimen/size_16dp"
+                android:textSize="@dimen/size_text16sp"
+                android:textColor="@color/hit600_text"
+                android:gravity="end|center_vertical"
+                android:textColorHint="@color/hit200_text"
+                android:layout_marginTop="@dimen/size_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edPassword" />
+
+            <EditText
+                android:id="@+id/edPhone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_56dp"
+                android:drawablePadding="@dimen/size_8dp"
+                android:drawableStart="@drawable/phone"
+                android:layout_marginTop="@dimen/size_16dp"
+                android:hint="@string/phone_number_label"
+                android:inputType="phone"
+                android:background="@drawable/edit_background"
+                android:paddingStart="@dimen/size_16dp"
+                android:textSize="@dimen/size_text16sp"
+                android:textColor="@color/hit600_text"
+                android:textColorHint="@color/hit200_text"
+                android:gravity="end|center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edConfirmPassword" />
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_56dp"
+                android:layout_marginTop="@dimen/size_48dp"
+                android:text="@string/create_account_title"
+                android:textSize="@dimen/size_text16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+                android:background="@drawable/button_selector"
+                app:backgroundTint="@null"
+                android:gravity="center|center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edPhone" />
+
+            <TextView
+                android:id="@+id/tvNoAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_32dp"
+                android:layout_marginStart="@dimen/size_88dp"
+                android:text="@string/have_account"
+                android:textColor="@color/hit600_text"
+                android:textSize="@dimen/size_text16sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnRegister" />
+
+            <TextView
+                android:id="@+id/tvCreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_now"
+                android:textColor="@color/primary_Button"
+                android:textSize="@dimen/size_text16sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginStart="@dimen/size_4dp"
+                android:layout_marginTop="@dimen/size_32dp"
+                app:layout_constraintStart_toEndOf="@id/tvNoAccount"
+                app:layout_constraintTop_toBottomOf="@id/btnRegister"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

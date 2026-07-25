@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:layoutDirection="rtl"
+    tools:context="com.example.myfinalproject.ProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_32dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/size_32dp"
+            android:layout_height="@dimen/size_32dp"
+            android:layout_marginTop="@dimen/size_32dp"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:src="@drawable/rightarrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/shape_color" />
+
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_account"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/size_text24sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            app:layout_constraintBottom_toBottomOf="@id/btnBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btnBack" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ImProfile"
+            android:layout_width="@dimen/size_112dp"
+            android:layout_height="@dimen/size_112dp"
+            android:layout_marginTop="@dimen/size_88dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.SereneFlora.Circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeaderTitle" />
+
+
+        <TextView
+            android:id="@+id/tvProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/size_text24sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="@dimen/size_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ImProfile" />
+        <TextView
+            android:id="@+id/tvpersonalInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_56dp"
+            android:text="@string/personal_info"
+            android:textColor="@color/shape_color"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileName" />
+
+
+        <View
+            android:id="@+id/ViEmailValueRow"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_72dp"
+            android:background="@drawable/viwe_background"
+            android:paddingStart="@dimen/size_16dp"
+            android:layout_marginTop="@dimen/size_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvpersonalInfo" />
+        <TextView
+            android:id="@+id/tvEmailLabelRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/email_label"
+            android:textColor="@color/hit200_text"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_margin="@dimen/size_8dp"
+            app:layout_constraintEnd_toEndOf="@id/ViEmailValueRow"
+            app:layout_constraintStart_toStartOf="@id/ViEmailValueRow"
+            app:layout_constraintTop_toTopOf="@id/ViEmailValueRow" />
+
+        <TextView
+            android:id="@+id/tvEmailValueRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_8dp"
+            android:layout_marginTop="@dimen/size_4dp"
+            android:fontFamily="serif"
+            android:text=""
+            android:textColor="@color/hit500_text"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/ViEmailValueRow"
+            app:layout_constraintStart_toStartOf="@id/ViEmailValueRow"
+            app:layout_constraintTop_toBottomOf="@id/tvEmailLabelRow" />
+
+        <View
+            android:id="@+id/ViPhoneValueRow"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_72dp"
+            android:background="@drawable/viwe_background"
+            android:paddingStart="@dimen/size_16dp"
+            android:layout_marginTop="@dimen/size_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ViEmailValueRow" />
+        <TextView
+            android:id="@+id/tvPhoneLabelRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number_label"
+            android:textColor="@color/hit200_text"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_margin="@dimen/size_8dp"
+            app:layout_constraintEnd_toEndOf="@id/ViPhoneValueRow"
+            app:layout_constraintStart_toStartOf="@id/ViPhoneValueRow"
+            app:layout_constraintTop_toTopOf="@id/ViPhoneValueRow" />
+
+        <TextView
+            android:id="@+id/tvPhoneValueRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_8dp"
+            android:layout_marginTop="@dimen/size_4dp"
+            android:fontFamily="serif"
+            android:text=""
+            android:textColor="@color/hit500_text"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/ViPhoneValueRow"
+            app:layout_constraintStart_toStartOf="@id/ViPhoneValueRow"
+            app:layout_constraintTop_toBottomOf="@id/tvPhoneLabelRow" />
+ <View
+            android:id="@+id/ViDate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_72dp"
+            android:background="@drawable/viwe_background"
+            android:paddingStart="@dimen/size_16dp"
+            android:layout_marginTop="@dimen/size_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ViPhoneValueRow" />
+        <TextView
+            android:id="@+id/tvDateLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/birth_date"
+            android:textColor="@color/hit200_text"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_margin="@dimen/size_8dp"
+            app:layout_constraintEnd_toEndOf="@id/ViDate"
+            app:layout_constraintStart_toStartOf="@id/ViDate"
+            app:layout_constraintTop_toTopOf="@id/ViDate" />
+
+        <TextView
+            android:id="@+id/tvDateValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_8dp"
+            android:layout_marginTop="@dimen/size_4dp"
+            android:fontFamily="serif"
+            android:text=""
+            android:textColor="@color/hit500_text"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/ViDate"
+            app:layout_constraintStart_toStartOf="@id/ViDate"
+            app:layout_constraintTop_toBottomOf="@id/tvDateLabel" />
+
+        <Button
+            android:id="@+id/btnEditAccount"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_56dp"
+            android:layout_marginTop="@dimen/size_56dp"
+            android:text="@string/edit_account"
+            android:textSize="@dimen/size_text16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="serif"
+            android:background="@drawable/button_selector"
+            app:backgroundTint="@null"
+            android:gravity="center_horizontal|center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ViDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

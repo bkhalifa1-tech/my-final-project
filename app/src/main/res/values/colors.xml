@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_Button">#FF6E88</color>
+    <color name="primary_pressed">#F00056</color>
+    <color name="shape_color">#FFAFBA</color>
+    <color name="title_text">#1A1717</color>
+    <color name="hit500_text">#5D5455</color>
+    <color name="hit600_text">#3A3434</color>
+    <color name="hit200_text">#C8C4C4</color>
+    <color name="info_color">#0000FF</color>
+    <color name="error_color">#FF0000</color>
+    <color name="success_color">#00FF00</color>
+</resources>
